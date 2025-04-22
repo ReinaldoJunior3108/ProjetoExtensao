@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="content1">
+    <div class="background active"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+
+    <div class="content">
+      <div class="wrapper">
+        <div class="nav">
+            <div class="logo"><img src="./assets/img/logo.png" alt=""></div>
+          <ul>
+            <li><a href="#" class="navlink active">Inicio</a></li>
+            <li><a href="#" class="navlink">Bosses</a></li>
+            <li><a href="#" class="navlink">Itens</a></li>
+            <li><a href="#" class="navlink">NPCS</a></li>
+            <li><a href="#" class="navlink">Conquistas</a></li>
+            <li><a href="#" class="navlink">Caveiras</a></li>
+            <li><a href="#" class="navlink">Fases</a></li>
+          </ul>
+        </div>
+
+        <div class="maincontent active"><h1>a</h1></div>
+        <div class="maincontent"><h1>b</h1></div>
+        <div class="maincontent"><h1>c</h1></div>
+        <div class="maincontent"><h1>d</h1></div>
+        <div class="maincontent"><h1>a</h1></div>
+        <div class="maincontent"><h1>b</h1></div>
+        <div class="maincontent"><h1>c</h1></div>
+      </div>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll(".navlink");
+      const contents = document.querySelectorAll(".maincontent");
+      const background = document.querySelectorAll(".background");
+      tabs.forEach((tab, idx, bdy) => {
+        tab.addEventListener("click", () => {
+          document.querySelector(".navlink.active").classList.remove("active");
+          tab.classList.add("active");
+
+          document
+            .querySelector(".maincontent.active")
+            .classList.remove("active");
+          contents[idx].classList.add("active");
+
+          document
+            .querySelector(".background.active")
+            .classList.remove("active");
+          background[idx].classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

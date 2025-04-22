@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body {
+  padding: 2rem 5rem;
+  width: 100vw;
+  height: 100%;
+  background-color: #000000;
+}
+.logo img{
+    max-width: 8rem;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+}
+.background:nth-child(1) {
+  background: #000000
+    url("./assets/img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg")
+    no-repeat center center/cover;
+}
+.background:nth-child(2) {
+  background: #000000
+    url("./assets/img/wp7423277.webp")
+    no-repeat center center/cover;
+}
+.background:nth-child(3) {
+  background: #000000
+    url("./assets/img/background.png")
+    no-repeat center center/cover;
+}
+.background:nth-child(4) {
+  background: #000000
+    url("./assets/img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg")
+    no-repeat center center/cover;
+}
+.background.active{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+.content {
+  width: 100%;
+  height: 95vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  position: relative;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+li > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+li > a:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+    0 0 30px #fff, 0 0 40px #fff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+.navlink.active{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+    0 0 30px #fff, 0 0 40px #fff;
+}
+.maincontent {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-top: 5rem;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.maincontent.active {
+  display: flex;
+  
+}
