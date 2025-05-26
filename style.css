@@ -94,7 +94,7 @@ body {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     border-radius: 0.5rem;
-    padding: 1rem 10rem;
+    padding: 1rem 2rem;
     position: relative;
 }
 .listamenu {
@@ -114,6 +114,7 @@ li > a:hover {
     0 0 30px #fff, 0 0 40px #fff;
 }
 .nav {
+    padding: 0 5rem;
     display: flex;
     justify-content: space-between;
     top: 0;
@@ -277,6 +278,7 @@ ol{
 } /*???*/
 
 .divitens{
+    max-width: 100%;
     font-size: 24px;
     margin: 50px;
     text-align: center;
@@ -293,7 +295,7 @@ ol{
 }
 
 .divItem{
-    width: 950px;
+    width: 100%;
     padding: 25px;
     background-color: #E6D2C0;
     border: 10px solid #A78C6D;
