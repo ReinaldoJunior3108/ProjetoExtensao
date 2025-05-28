@@ -127,6 +127,7 @@ li > a:hover {
     0 0 30px #fff, 0 0 40px #fff;
 }
 .maincontent {
+    position: relative;
     display: none;
     justify-content: center;
     align-items: center;
@@ -200,7 +201,7 @@ li > a:hover {
 }
 
 .infoNPC2{
-    margin-left: 4rem 0;
+    margin-left: 4rem;
     margin-top: 0rem;
     display: flex;
 }
@@ -445,4 +446,33 @@ h2{
     font-weight: bolder;
     font-style: italic;
     text-decoration: underline;
+}
+.itemNav{
+
+    margin-top: 2rem;
+    width: 100%;
+}
+.itemNav ul{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+.itemNav a{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.navItemLink.active{
+    animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+    to{
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff
+    }
+}
+.itemContent{
+    display: none;
+}
+.itemContent.active{
+    display: block;
 }

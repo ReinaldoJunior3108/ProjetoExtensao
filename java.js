@@ -17,3 +17,16 @@ tab.addEventListener("click", () => {
     background[idx].classList.add("active");
 });
 });
+
+const itemToggle = document.querySelectorAll('.navItemLink')
+const itemContent = document.querySelectorAll('.itemContent')
+
+itemToggle.forEach((button, idx) => {
+    button.addEventListener('click', () => {
+        document.querySelector('.navItemLink.active').classList.remove('active')
+        button.classList.add('active')
+
+        document.querySelector('.itemContent.active').classList.remove('active')
+        itemContent[idx].classList.add('active')
+    })
+})
