@@ -296,7 +296,7 @@ ol{
 }
 
 .divItem{
-    width: 100%;
+    width: 950px;
     padding: 25px;
     background-color: #E6D2C0;
     border: 10px solid #A78C6D;
@@ -327,14 +327,43 @@ ol{
     color: #755655;
 }
 
-.divinscricao{
-    background-color: gray;
-}
-
 .spanDLC{
     color: #755655;
     font-size: 12px;
     font-family: cursive;
+}
+
+                /*inscricoes*/
+.divInsc{
+    max-width: 100%;
+    font-size: 24px;
+    margin: 50px;
+    text-align: center;
+}
+
+.divinscricao{
+    max-width: 650px;
+    margin: 10px 30px;
+    padding: 25px;
+    background-color: #CDB49C;
+    border: 5px solid #A78C6D;
+    border-radius: 2px;
+    justify-self: center;
+}
+
+.divinscricao h3{
+    color: #755655;
+    font-size: 35px;
+}
+
+.divinscricao p{
+    color: #755655;
+    text-align: left;
+}
+
+.divinscricao hr{
+    color: rebeccapurple
+
 }
 
 /*ISABELLA*/
